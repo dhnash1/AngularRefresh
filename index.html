@@ -11,10 +11,12 @@
       <h1>Random Picker</h1>
       <input type="text" name="" value="" ng-model="nameInput">
       <button type="button" name="button" ng-click="listAdd()">Send</button>
+      <button type="button" name="button" ng-click = "randomPick()">Pick!</button>
+      <button type="button" name="button" ng-click = "clearList()">Clear</button>
       <div id="theList" ng-repeat="things in randomList">
         {{things.name}} <button type="button" name="button" ng-click="listRemove()">Delete</button>
       </div>
-      <button type="button" name="button" ng-click = "randomPick()">Pick!</button>
+      <h1>{{selected}}</h1>
     </div>
   </body>
 </html>

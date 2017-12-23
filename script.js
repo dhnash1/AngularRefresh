@@ -28,7 +28,14 @@ App.controller("working",["$scope", "$http", function($scope, $http){
     var arrNumb = randomList.length;
     var numb = Math.random();
     var rand = Math.round(numb * (arrNumb - 1));
+    var picked = (randomList[rand].name);
     console.log(rand);
-    console.log(randomList[rand].name);
+    console.log(picked);
+    $scope.selected = picked;
+  };
+  $scope.clearList = function(){
+    randomList = [];
+    $scope.randomList = randomList;
+    $scope.selected = "";
   };
 }]);
