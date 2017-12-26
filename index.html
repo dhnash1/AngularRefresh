@@ -10,14 +10,14 @@
   <body ng-app = "myApp">
     <div ng-controller = "working">
       <h1>Random Picker</h1>
-      <input type="text" name="" value="" ng-model="nameInput">
-      <button type="button" name="button" ng-click="listAdd()">Send</button>
+      <input type="text" name="" value="" ng-model="nameInput" placeholder="Item">
+      <button type="button" name="button" ng-mouseup="listAdd()">Send</button>
       <button type="button" name="button" ng-click = "randomPick()">Pick!</button>
       <button type="button" name="button" ng-click = "clearList()">Clear</button>
       <div id="theList" ng-repeat="things in randomList">
         {{things.name}} <button type="button" name="button" ng-click="listRemove()">Delete</button>
       </div>
-      <h1>{{selected}}</h1>
+      <h2>{{selected}}</h2>
     </div>
   </body>
 </html>

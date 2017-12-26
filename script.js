@@ -7,6 +7,10 @@ App.controller("working",["$scope", "$http", function($scope, $http){
     var x = 0;
   $scope.listAdd = function(){
     var itemToAdd = $scope.nameInput;
+    if (itemToAdd == ""){
+      alert("Please input something!");
+      $scope.nameInput = "";
+    }else{
     $scope.nameInput = "";
     var newObject = {
       name : itemToAdd,
@@ -16,6 +20,7 @@ App.controller("working",["$scope", "$http", function($scope, $http){
     console.log(randomList);
     $scope.randomList = randomList;
     x = x + 1;
+  }
   };
   $scope.listRemove = function(){
     console.log(this.$index);

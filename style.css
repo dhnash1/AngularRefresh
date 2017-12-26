@@ -1,3 +1,11 @@
 h1{
-  font-size: 25px
+  font-size: 25px;
+}
+
+html{
+  text-align: center;
+}
+
+h2{
+    border: solid black 5px;
 }
