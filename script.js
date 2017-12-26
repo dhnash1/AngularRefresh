@@ -5,6 +5,7 @@ App.controller("working",["$scope", "$http", function($scope, $http){
   console.log("angular loaded");
     var randomList = [];
     var x = 0;
+    showResult = false;
   $scope.listAdd = function(){
     var itemToAdd = $scope.nameInput;
     if (itemToAdd == ""){
@@ -37,10 +38,12 @@ App.controller("working",["$scope", "$http", function($scope, $http){
     console.log(rand);
     console.log(picked);
     $scope.selected = picked;
+    showResult = true;
   };
   $scope.clearList = function(){
     randomList = [];
     $scope.randomList = randomList;
     $scope.selected = "";
+    showResult = false;
   };
 }]);

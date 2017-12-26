@@ -18,7 +18,7 @@
       <div id="theList" ng-repeat="things in randomList">
         {{things.name}} <button type="button" name="button" ng-click="listRemove()">Delete</button>
       </div>
-      <h2>{{selected}}</h2>
+      <h2 ng-show="showResult">{{selected}}</h2>
     </div>
   </body>
 </html>
