@@ -10,3 +10,6 @@ Technologies used:
   -Angular
   -HTML
   -CSS
+  -Express 
+  -Node
+  -MongoDB
