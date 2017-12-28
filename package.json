@@ -12,6 +12,7 @@
   "dependencies": {
     "angular": "^1.6.8",
     "bootstrap": "^3.3.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0-rc0"
   }
 }
